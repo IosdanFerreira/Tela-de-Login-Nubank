@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+header{
+    display: flex;
+    align-self: baseline;
+}
+.background{
+    background-color: #820AD1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 8.5vw;
+    height: 17.3vh;
+    margin-left: 1vw;
+    margin-top: -1vh
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.display-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 33vw;
+    height: 86.5vh;
+    border-radius: 7px;
+    margin-top: -6vh;
+}
+.login-txt{
+    padding: 10vh 0;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.login-txt span{
+    color: rgb(65, 65, 65);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+    margin-bottom: 2vh;
+}
+.input input{
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted red;
+
+    font-size: 13pt;
+    color: rgba(68, 68, 68, 0.822);
+}
+.input .input1{
+    margin: 3.5vh 0;
+}
+.input .input2{
+    margin: 5.5vh 0 3vh 0;
+}
+.input input::placeholder{
+    font-size: 13pt;
+    color: rgba(247, 43, 43, 0.74);
+}
+.button{
+    margin: 3vh 0;
+    width: 69%;
+    height: 10vh;
+}
+.button button{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.377);
+    color: rgba(128, 128, 128, 0.377);
+    font-size: 10pt;
+    font-weight: 500;
+}
+.options{
+    margin: 5vh 0;
+}
+.options a{
+    text-decoration: none;
+}
+.options .options-txt1{
+    color: #9d47d6;
+    font-weight: 500;
+    margin-bottom: 2vh;
+    font-size: 11.5pt;
+}
+.options .options-txt1:hover{
+    text-decoration: underline;
+}
+.options .options-txt2{
+    font-size: 11.5pt;
+    color: #9d47d6;
+    font-weight: 500;
+}
+.options .options-txt2:hover{
+    text-decoration: underline;
+}
