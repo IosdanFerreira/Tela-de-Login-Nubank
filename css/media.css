@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@media (max-width: 992px) {
+    header{
+        height: 15vh;
+    }
+
+    header .logo{
+        width: 11.5vw;
+        height: 19vh;
+    }
+    body .display-login{
+        width: 46vw;
+    }
+}
+
+@media (max-width: 768px){
+    header .logo{
+        width: 16vw;
+        height: 20vh;
+    }
+
+    body .display-login{
+        width: 56vw;
+    }
+}
+@media (max-width: 576px){
+    header .logo{
+        width: 21vw;
+        height: 20vh;
+        margin-left: -1vw;
+    }
+
+    body .display-login{
+        width: 65vw;
+    }
+}
