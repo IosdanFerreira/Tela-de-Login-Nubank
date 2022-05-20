@@ -23,12 +23,12 @@
         </div>
 
         <form class="input">
-        <input class="input1" type="text" name="CPF" placeholder="CPF">
-        <input class="input2" type="password" placeholder="Senha">
+        <input class="input1" id="input1" type="text" name="CPF" placeholder="CPF">
+        <input class="input2" id="input2" onkeyup="verificar()" type="password" placeholder="Senha">
         </form>
 
         <div class="button">
-        <button type="submit">CONTINUAR</button>
+        <button id="button">CONTINUAR</button>
         </div>
 
         <div class="options">
@@ -36,5 +36,6 @@
             <a href=""><p class="options-txt2">Ainda não sou cliente ></p></a>
         </div>
     </section>
+    <script src="js/control.js"></script>
 </body>
 </html>
