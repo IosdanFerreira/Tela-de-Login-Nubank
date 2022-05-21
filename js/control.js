@@ -1,16 +1,22 @@
-let input1 = document.getElementById("input1").value
-let input2 = document.getElementById("input2").value
-let inputs = input1 + input2;
 
 function verificar(){
+let input1 = document.getElementById("input1")
+let input2 = document.getElementById("input2")
 
-    if(inputs.value !== "" && inputs.value !== null && inputs.value !==" "){
-    let button = document.getElementById("button");
-    button.style.backgroundColor = '#820AD1'
-    button.style.color = 'white'
-    }else{
-    let button = document.getElementById("button");
-    button.style.backgroundColor = 'white'
-    button.style.color = 'rgba(128, 128, 128, 0.377)'
-    }
+if(input1.value == ""){
+    input1.placeholder = 'Informe seu CPF'
+}else{
+    input1.placeholder = 'CPF'
+}
+
+if(input2.value == "" && input2.value.length < 8){
+    input2.placeholder = 'Senha inválida'
+}else{
+    input2.placeholder = 'Senha'
+}
+    input1.value = "";
+    input1.focus()
+    input2.value = "";
+    input2.focus()
+
 }
